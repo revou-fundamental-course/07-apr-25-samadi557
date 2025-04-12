@@ -7,7 +7,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+h1 {
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 .main-logo {
     height: 50px;
     width: 50px;
@@ -39,14 +48,35 @@ nav>a {
     background-image: url(../banner.jpg);
     background-size: cover;
     background-position: center;
+    
 }
+
+
 
 main>section {
     height: 800px;
+
+}
+.our-profile-section{
+
+}
+.section-content {
+    
+        text-align: center;
+        font-size: x-large;
 }
 
-.section-content {
-    text-align: center;
+.contact {
+
+}
+
+button:hover{
+background-color: rgba(170, 211, 247, 0.438);
+font-size: 18px;
+border-radius: 10%;
+}
+.contact>a {
+
 }
 
 footer {
