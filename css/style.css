@@ -1,5 +1,5 @@
 body {
-    font-family: fantasy;
+    font-family: 'Courier New', Courier, monospace;
     background-color: aliceblue;
 }
 
@@ -11,7 +11,7 @@ body {
 .main-logo {
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image:url(../logo.png) ;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -21,19 +21,24 @@ nav {
     display: flex;
     align-items: center;
 }
-
+a:hover {
+    background-color: rgba(170, 211, 247, 0.438);
+    font-size: 18px;
+    border-radius: 10%;
+  }
 nav>a {
     text-decoration: none;
     color: black;
-    border: 1px solid;
+    border: none;
     padding: 8px;
+    border-radius: 30%;
 }
 
 .banner-img {
-    height: 400px;
-    background-image: url(https://picsum.photos/1000);
+    height: 500px;
+    background-image: url(../banner.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 main>section {
