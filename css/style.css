@@ -54,7 +54,8 @@ nav>a {
 
 
 main>section {
-    height: 800px;
+    height: auto;
+    
 
 }
 .our-profile-section{
@@ -65,8 +66,15 @@ main>section {
         text-align: center;
         font-size: x-large;
 }
+.message-us-section{
+    display: flex;
+    height: 50px;
+
+}
 
 .contact {
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -75,10 +83,103 @@ background-color: rgba(170, 211, 247, 0.438);
 font-size: 18px;
 border-radius: 10%;
 }
-.contact>a {
 
-}
 
-footer {
+
+.wrapper {
+    
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        flex-grow: 1;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: right;
+    text-decoration: none;
+    margin:0px;
+    padding: auto;
+    overflow: hidden;
+    background: aliceblue;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    align-content:center;
+    flex-direction: row;
+    
+  }
+  .wrapper .button:hover {
+    width: 200px;
+  }
+  .wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    color: #000;
     text-align: center;
-}
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon {
+    background: #000000;
+  }
+  .wrapper .button:nth-child(2):hover .icon {
+    background: #000000;
+  }
+  .wrapper .button:nth-child(3):hover .icon {
+    background: #000000;
+  }
+  .wrapper .button:nth-child(4):hover .icon {
+    background: #000000;
+ 
+  }
+  .wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i {
+    color: #fff;
+  }
+  .wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span {
+    color: #000000;
+  }
+  .wrapper .button:nth-child(2) span {
+    color: #000000;
+  }
+  .wrapper .button:nth-child(3) span {
+    color: #141414;
+  }
+  .wrapper .button:nth-child(4) span {
+    color: #000000;
+  }
+  
+
+
+  .footer {
+    text-align: center;
+    padding: 16px;
+    font-family: monospace;
+    font-size: 14px;
+    
+    
+  }
+  
