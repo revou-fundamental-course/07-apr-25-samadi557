@@ -9,6 +9,8 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -37,8 +39,11 @@
             </header>
 
             <!-- Banner Content* -->
-            <div class="banner-img"></div>
-
+            <div class="banner">
+                <img id="banner-img" src="art/banner.png" alt="Banner" />
+              </div>
+              
+              
                 
             <!-- Banner Text -->
             <article class="section-content">
@@ -61,7 +66,7 @@
             
             <section>
                 <h2>Profile</h2>
-                <p>Hey there! I'm Samadi Prasetyo, a professional illustrator, caffeine enthusiast, and proud over-user of the "undo" button. I specialize in bringing bold ideas to life with hand-drawn charm, a sprinkle of humor, and just the right amount of "did-they-mean-to-do-that?"—(spoiler: I did).
+                <p>Hey there! I'm Samadi Prasetyo a.k.a Samepark, a professional illustrator, caffeine enthusiast, and proud over-user of the "undo" button. I specialize in bringing bold ideas to life with hand-drawn charm, a sprinkle of humor, and just the right amount of "did-they-mean-to-do-that?"—(spoiler: I did).
 
                     With a background in fine arts and a sketchbook that’s seen more drama than reality TV, I create visuals that pop, connect, and occasionally wink at you. From quirky icon sets to detailed editorial illustrations, I’m all about turning concepts into artwork that makes people stop scrolling.</p>
             </section>
@@ -98,17 +103,10 @@
             <!-- Portfolio Text -->
             <article class="section-content">
                 <p>I’m an illustrator who turns chaotic scribbles into client-approved masterpieces—fueled by coffee, bad puns, and pure pixel magic.
-
-
-
-
-
-
-
-                </p>
+             </p>
             </article>
         </section>
-        
+ <!--slide art-->       
         <div class="slider" reverse="true" style="
             --width: 500px;
             --height: 500px;
@@ -136,70 +134,73 @@
                 <h1>Message Us</h1>
             </header>
 
-            <!-- Message Us Form -->
-            <section class="contact">
+        <!-- Message Us Form -->
+           
+        <div class="form-preview-wrapper">
+            <!-- Form -->
+            <form id="message-form">
+              <label>
+                Name:
+                <input type="text" id="name" required>
+              </label>
+          
+              <label>
+                Email:
+                <input type="email" id="email" required>
+              </label>
+          
+              <label>
+                Purpose:
+                <div class="radio-group">
+                  <label><input type="radio" name="purpose" value="Inquiry" required> Inquiry</label>
+                  <label><input type="radio" name="purpose" value="Feedback"> Feedback</label>
+                  <label><input type="radio" name="purpose" value="Support"> Support</label>
+                </div>
+              </label>
+          
+              <label>
+                Message:
+                <textarea id="message" rows="4" required></textarea>
+              </label>
+          
+              <button type="submit">Send</button>
+            </form>
+          
+            <!-- Result Preview -->
+            <div class="result-form">
+              <h3>Summary:</h3>
+              <p>Name:<br><span id="preview-name">-</span></p>
+              <p>Email:<br><span id="preview-email">-</span></p>
+              <p>Purpose:<br><span id="preview-purpose">-</span></p>
+              <p>Message:<br><span id="preview-message">-</span></p>
+            </div>
+          
+            <div class="social-buttons">
+                <a href="https://instagram.com/yourusername" target="_blank" class="btn instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/yourusername" target="_blank" class="btn x">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://dribbble.com/yourusername" target="_blank" class="btn dribbble">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </div>
+                 
+        </div>    
             
-                <form name="myForm" action="mailto:you@example.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
-                  <div style="margin-bottom: 1rem;">
-                    <input type="text" name="name" placeholder="Your Name" required style="padding: 0.5rem; width: 100%; max-width: 400px;">
-                  </div>
-                  
-                  <div style="margin-bottom: 1rem;">
-                    <input type="email" name="email" placeholder="Your Email" required style="padding: 0.5rem; width: 100%; max-width: 400px;">
-                  </div>
-                  <div style="margin-bottom: 1rem;">
-                    <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 0.5rem; width: 100%; max-width: 400px;"></textarea>
-                  </div>
-                  <button type="submit" style="background: #000000; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 0.5rem; font-weight: 600;">Send</button>
-                </form>
-                
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-            </section>    
-                
             
-            
-                <div class="wrapper">
-                    <a href="#" class="button">
-                       <div class="icon">
-                          <i class="fab fa-facebook-f"></i>
-                       </div>
-                       <span>Facebook</span>
-                    </a>
-                    <a href="#" class="button">
-                       <div class="icon">
-                          <i class="fab fa-x"></i>
-                       </div>
-                       <span>X</span>
-                    </a>
-                    <a href="#" class="button">
-                       <div class="icon">
-                          <i class="fab fa-instagram"></i>
-                       </div>
-                       <span>Instagram</span>
-                    </a>
-                    <a href="#" class="button">
-                       <div class="icon">
-                          <i class="fab fa-dribbble"></i>
-                       </div>
-                       <span>Dribbble</span>
-                    </a>
-                    
-                 </div>
-                  
-        
-    </main>
-
+ 
     
-    
-    <hr />
-    
-        <!-- Footer Content -->
+          <hr />
+          <!-- Footer Content -->
     <footer>
         <span>RevoU Mini Porject</span>
     </footer>
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 </body>
 
