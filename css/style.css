@@ -20,6 +20,14 @@ h1 {
     font-weight: bold;
     unicode-bidi: isolate;
 }
+
+#dynamic-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .main-logo {
     height: 50px;
     width: 50px;
@@ -227,6 +235,8 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px #6366f1;
 }
 
 button:hover{

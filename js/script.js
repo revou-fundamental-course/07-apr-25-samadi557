@@ -52,4 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    new TypeIt("#dynamic-title", {
+      strings: ["Pixel Magician", "Design Dreamer", "Digital Artist"],
+      speed: 80,
+      breakLines: false,
+      loop: true,
+      deleteSpeed: 50,
+      nextStringDelay: 1000,
+    }).go();
+  });
